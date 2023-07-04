@@ -1,0 +1,142 @@
+/*────────────────────────────────────
+        Search Input Component
+────────────────────────────────────*/
+/*~ Global Search Input */
+
+textarea,
+input[type=text],
+input[type=search],
+input[type=email],
+input[type=password],
+input[type=number] {
+    font-family: var(--font-interface-theme);
+    font-size: var(--font-scale-1);
+}
+
+.theme-light textarea,
+.theme-light input[type=text],
+.theme-light input[type=search],
+.theme-light input[type=email],
+.theme-light input[type=password],
+.theme-light input[type=number] {
+    background: var(--color-l-gray-10);
+    border: 1px solid var(--background-modifier-border);
+}
+
+.theme-light textarea:focus,
+.theme-light input[type=text]:focus,
+.theme-light input[type=search]:focus,
+.theme-light input[type=email]:focus,
+.theme-light input[type=password]:focus,
+.theme-light input[type=number]:focus {
+    background: var(--color-l-white);
+    border: 1px solid var(--color-l-gray-60);
+    box-shadow: 0px 0px 0px 3px var(--color-l-gray-40);
+}
+
+.theme-dark textarea,
+.theme-dark input[type=text],
+.theme-dark input[type=search],
+.theme-dark input[type=email],
+.theme-dark input[type=password],
+.theme-dark input[type=number] {
+    background: var(--color-d-gray-90);
+    border: 1px solid var(--background-modifier-border);
+}
+
+.theme-dark textarea:focus,
+.theme-dark input[type=text]:focus,
+.theme-dark input[type=search]:focus,
+.theme-dark input[type=email]:focus,
+.theme-dark input[type=password]:focus,
+.theme-dark input[type=number]:focus {
+    background: var(--color-d-blacker);
+    border: 1px solid var(--color-d-gray-50);
+    box-shadow: 0px 0px 0px 3px var(--color-d-gray-60);
+}
+
+/*~ Command Palette & Quick Switcher Search Input ~*/
+.prompt {
+    padding: 0;
+    border: 1px solid var(--background-modifier-border);
+}
+
+.prompt-results {
+    padding: var(--scale-2-6);
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+.prompt input.prompt-input {
+    font-size: var(--font-scale-2);
+    background: var(--background-primary);
+    padding: var(--scale-8-3);
+    border: none;
+}
+
+.prompt input.prompt-input:focus {
+    background: var(--background-primary);
+    border: none;
+    box-shadow: none;
+}
+
+/*────────KBD──────────*/
+kbd,
+.setting-hotkey {
+    font-family: var(--font-monospace-theme);
+}
+
+.markdown-soure-view kbd,
+.cm-s-obsidian kbd,
+.markdown-preview-view kbd,
+.markdown-soure-view .setting-hotkey,
+.cm-s-obsidian .setting-hotkey,
+.markdown-preview-view .setting-hotkey {
+    padding: 3px 8px;
+}
+
+.theme-light kbd,
+.theme-light .setting-hotkey {
+    font-size: var(--font-scale-0);
+    color: var(--color-l-red-300);
+    background: var(--color-l-gray-20);
+    border: 1px solid rgba(100, 100, 100, 0.1);
+    box-shadow: 0px -2px 0px 0px rgba(100, 100, 100, 0.1) inset, 0px 2px 4px 0px rgba(100, 100, 100, 0.1);
+}
+
+.theme-dark kbd,
+.theme-dark .setting-hotkey {
+    font-size: var(--font-scale-0);
+    color: var(--color-d-red-500);
+    background: var(--color-d-gray-90);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-hotkey {
+    padding: 1px 8px 3px 8px;
+    margin-top: -3px;
+}
+
+.prompt-instruction-command {
+    font-family: var(--font-monospace);
+    font-size: var(--font-scale-0);
+    background: var(--background-secondary);
+    padding: var(--scale-2-1) var(--scale-2-2) calc(1px + var(--scale-2-1)) var(--scale-2-2);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--scale-2-2);
+}
+
+.theme-light .prompt-instruction-command {
+    font-size: var(--font-scale-0);
+    color: var(--color-l-red-300);
+    background: var(--color-l-gray-20);
+    border: 1px solid rgba(100, 100, 100, 0.1);
+    box-shadow: 0px -2px 0px 0px rgba(100, 100, 100, 0.1) inset, 0px 2px 4px 0px rgba(100, 100, 100, 0.1);
+}
+
+.theme-dark .prompt-instruction-command {
+    color: var(--color-d-red-500);
+    background: var(--color-d-gray-90);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}

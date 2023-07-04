@@ -1,0 +1,533 @@
+/*────────────────────────────────────
+            Modals
+────────────────────────────────────*/
+/*─────────All Modals──────────*/
+.modal {
+    width: clamp(200px, 90vw, 960px);
+    height: auto;
+    border-radius: var(--scale-2-8);
+    overflow-y: hidden;
+    background: var(--background-primary);
+    border: 1px solid var(--background-modifier-border);
+    /*─────────Settings Modal──────────*/
+    /*─────────Command, Quick Switcher etc. Modals──────────*/
+}
+
+.modal.mod-settings,
+.modal.mod-settings .vertical-tab-container {
+    width: clamp(200px, 90vw, 960px);
+    min-height: 20vh;
+    height: auto;
+    max-height: 70vh;
+    border-radius: var(--scale-2-8);
+    overflow-y: hidden;
+    border: 1px solid var(--background-modifier-border);
+}
+
+.theme-light .modal.mod-settings,
+.theme-light .modal.mod-settings .vertical-tab-container {
+    box-shadow: var(--shadow-xl) var(--color-l-shadow-100);
+}
+
+.theme-dark .modal.mod-settings,
+.theme-dark .modal.mod-settings .vertical-tab-container {
+    box-shadow: var(--shadow-xl) var(--color-d-shadow-100);
+}
+
+.modal.mod-settings .setting-item-control button.clickable-icon,
+.modal.mod-settings .vertical-tab-container .setting-item-control button.clickable-icon {
+    padding: 0;
+    margin-right: var(--scale-2-4);
+}
+
+.modal.mod-community-theme.mod-community-theme,
+.modal.mod-community-plugin {
+    width: clamp(200px, 90vw, 960px);
+    min-height: 90vh;
+    overflow: hidden;
+}
+
+.modal.mod-image-lightbox {
+    width: clamp(200px, 95vw, 1920px);
+    min-height: 20vh;
+    height: auto;
+    max-height: 90vh;
+    border-radius: var(--scale-2-8);
+    overflow-y: hidden;
+}
+
+.modal .vertical-tab-nav-item {
+    text-transform: capitalize;
+}
+
+.modal-title {
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.modal.mod-community-theme .modal-title {
+    margin-left: var(--scale-8-3);
+}
+
+.modal .setting-hotkey {
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.modal .setting-hotkey .setting-delete-hotkey {
+    margin-right: 0;
+    margin-left: var(--scale-2-6);
+}
+
+.modal .modal-content .vertical-tab-header,
+.modal .modal-content .vertical-tab-header-group,
+.modal .modal-content .vertical-tab-content-container {
+    padding: 0;
+}
+
+.modal .modal-content .vertical-tab-content {
+    padding: var(--scale-8-4) var(--scale-8-4) var(--scale-8-4) var(--scale-8-4);
+}
+
+.modal .modal-content .vertical-tab-header,
+.modal .modal-content .vertical-tab-content-container .vertical-tab-content {
+    flex: 0 0 220px;
+}
+
+.theme-light .modal .modal-content .vertical-tab-header,
+.theme-light .modal .modal-content .vertical-tab-content-container .vertical-tab-content {
+    background: var(--color-l-white);
+}
+
+.theme-dark .modal .modal-content .vertical-tab-header,
+.theme-dark .modal .modal-content .vertical-tab-content-container .vertical-tab-content {
+    background: var(--color-d-gray-70);
+}
+
+.modal .modal-content .vertical-tab-header-group,
+.modal .modal-content .vertical-tab-nav-item {
+    background: var(--background-secondary);
+}
+
+.modal .modal-content .vertical-tab-header-group-title {
+    font-weight: var(--font-bold);
+}
+
+.modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item {
+    background: transparent;
+    padding: var(--scale-2-2) var(--scale-2-4) var(--scale-2-2) var(--scale-2-8);
+    border: 1px solid transparent;
+    border-radius: var(--scale-2-2);
+    border-left: none;
+    margin: var(--scale-0-0) var(--scale-2-4) var(--scale-0-0) var(--scale-2-4);
+    transition: var(--duration-superfast) var(--motion-smooth);
+}
+
+.modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:last-of-type {
+    margin-bottom: var(--scale-2-5);
+}
+
+.modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item.is-active {
+    font-weight: var(--font-bold);
+    z-index: 2;
+}
+
+.theme-light .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:hover {
+    color: var(--color-l-gray-80);
+    background: var(--color-l-gray-10);
+}
+
+.theme-light .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:active {
+    color: var(--color-l-gray-50);
+    background: var(--color-l-gray-40);
+}
+
+.theme-light .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item.is-active {
+    color: var(--color-l-whiter);
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    box-shadow: 0px -2px 0px 0px rgba(100, 100, 100, 0.15) inset, 0px 1px 4px 0px rgba(100, 100, 100, 0.25);
+}
+
+.theme-light .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:nth-child(3n+1).is-active {
+    background: var(--color-l-yellow-500);
+}
+
+.theme-light .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:nth-child(3n+2).is-active {
+    background: var(--color-l-red-300);
+}
+
+.theme-light .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:nth-child(3n+3).is-active {
+    background: var(--color-l-blue-300);
+}
+
+.theme-dark .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:hover {
+    color: var(--color-d-gray-20);
+    background: var(--color-d-gray-60);
+}
+
+.theme-dark .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:active {
+    color: var(--color-d-gray-40);
+    background: var(--color-d-blacker);
+}
+
+.theme-dark .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item.is-active {
+    color: var(--color-d-black);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.2) inset, 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.theme-dark .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:nth-child(3n+1).is-active {
+    background: var(--color-d-yellow-700);
+}
+
+.theme-dark .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:nth-child(3n+2).is-active {
+    background: var(--color-d-red-500);
+}
+
+.theme-dark .modal .modal-content .vertical-tab-header-group-items .vertical-tab-nav-item:nth-child(3n+3).is-active {
+    background: var(--color-d-blue-300);
+}
+
+.modal-container .suggestion-item {
+    font-size: var(--font-scale-1);
+    line-height: var(--line-height-0-5);
+    padding: var(--scale-2-3) var(--scale-2-3) var(--scale-2-3) var(--scale-8-1);
+    border-radius: var(--scale-2-2);
+    border: 1px solid transparent;
+}
+
+.modal-container .suggestion-item span.suggestion-prefix {
+    color: var(--text-muted);
+    font-size: 90%;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-right: var(--scale-8-1);
+}
+
+.modal-container .suggestion-item span.suggestion-prefix::after {
+    display: none;
+}
+
+.theme-light .modal-container .suggestion-item.is-selected {
+    background: var(--color-l-gray-20);
+    border: 1px solid var(--color-l-gray-40);
+}
+
+.theme-light .modal-container .suggestion-item.is-selected kbd.suggestion-hotkey {
+    background: var(--color-l-whiter);
+}
+
+.theme-light .modal-container .suggestion-item.is-selected:active {
+    color: var(--text-muted);
+    background: var(--color-l-gray-40);
+    border: 1px solid var(--color-l-gray-50);
+}
+
+.theme-light .modal-container .suggestion-item.is-selected:active kbd.suggestion-hotkey {
+    background: var(--color-l-gray-20);
+    padding-top: 3px;
+    padding-bottom: 1px;
+    box-shadow: none;
+}
+
+.theme-light .modal-container .suggestion-item.is-selected:active .suggestion-flair,
+.theme-light .modal-container .suggestion-item.is-selected:active .suggestion-note {
+    color: var(--text-faint);
+}
+
+.theme-dark .modal-container .suggestion-item.is-selected {
+    background: var(--color-d-gray-50);
+    border: 1px solid var(--color-d-gray-40);
+}
+
+.theme-dark .modal-container .suggestion-item.is-selected kbd.suggestion-hotkey {
+    background: var(--color-d-gray-70);
+}
+
+.theme-dark .modal-container .suggestion-item.is-selected:active {
+    color: var(--text-faint);
+    background: var(--color-d-gray-90);
+    border: 1px solid var(--color-d-gray-50);
+}
+
+.theme-dark .modal-container .suggestion-item.is-selected:active kbd.suggestion-hotkey {
+    background: var(--color-d-gray-100);
+    padding-top: 3px;
+    padding-bottom: 1px;
+    box-shadow: none;
+}
+
+.theme-dark .modal-container .suggestion-item.is-selected:active .suggestion-flair,
+.theme-dark .modal-container .suggestion-item.is-selected:active .suggestion-note {
+    color: var(--text-faint);
+}
+
+.modal-container .suggestion-flair {
+    position: relative;
+    left: initial;
+    top: initial;
+    margin-right: var(--scale-2-3);
+}
+
+.modal-container .prompt .suggestion-flair {
+    float: left;
+    margin-top: 1px;
+}
+
+/* Modal Close Close Buttons */
+.slides-close-btn,
+.modal-close-button {
+    cursor: pointer;
+    border-radius: var(--scale-8-3);
+}
+
+.theme-light .slides-close-btn:before,
+.theme-light .modal-close-button:before {
+    color: var(--color-l-gray-20);
+}
+
+.theme-dark .slides-close-btn:before,
+.theme-dark .modal-close-button:before {
+    color: var(--color-d-gray-80);
+}
+
+.theme-light .slides-close-btn,
+.theme-light .modal-close-button {
+    background: var(--color-l-red-300);
+    box-shadow: 0px 1px 2px 0px rgba(100, 100, 100, 0.5), 0px -2px 0px 0px rgba(100, 20, 20, 0.18) inset;
+}
+
+.theme-light .slides-close-btn:hover,
+.theme-light .modal-close-button:hover {
+    background: var(--color-l-red-500);
+}
+
+.theme-light .slides-close-btn:active,
+.theme-light .modal-close-button:active {
+    background: var(--color-l-red-700);
+    box-shadow: 0px 0px 0px 2px rgba(150, 20, 20, 0.55) inset;
+}
+
+.theme-dark .slides-close-btn,
+.theme-dark .modal-close-button {
+    background: var(--color-d-red-500);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25), 0px -2px 0px 0px rgba(50, 10, 10, 0.35) inset;
+}
+
+.theme-dark .slides-close-btn:hover,
+.theme-dark .modal-close-button:hover {
+    background: var(--color-d-red-300);
+}
+
+.theme-dark .slides-close-btn:active,
+.theme-dark .modal-close-button:active {
+    background: var(--color-d-red-700);
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.45) inset;
+}
+
+/*────────────────────────────────────
+    Toggle (Checkboxes for Modals)
+────────────────────────────────────*/
+.checkbox-container {
+    height: calc(3px + var(--scale-8-3));
+    width: calc(2px + var(--scale-8-6));
+    border-radius: var(--scale-8-4);
+}
+
+.checkbox-container:after {
+    height: calc(4px + var(--scale-8-2));
+    width: calc(4px + var(--scale-8-2));
+    border-radius: var(--scale-8-4);
+    margin: 2.5px 0 0 0px;
+}
+
+.checkbox-container:active::after {
+    width: calc(4px + var(--scale-8-3));
+}
+
+.checkbox-container.is-enabled {
+    transition: var(--duration-fast-2) var(--motion-smooth);
+}
+
+.checkbox-container.is-enabled:after {
+    transform: translate3d(24px, 0, 0);
+    margin-left: 1px;
+}
+
+.checkbox-container.is-enabled:active::after {
+    left: -8px;
+}
+
+.theme-light .checkbox-container {
+    background: var(--color-l-gray-40);
+    border: 1px solid var(--color-l-gray-40);
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5), 0px 0px 2px 1px rgba(100, 100, 100, 0.35) inset;
+}
+
+.theme-light .checkbox-container::after {
+    background: var(--color-l-whiter);
+    box-shadow: 0px 1px 3px 0px rgba(100, 100, 100, 0.45), 0px -2px 0px 0px rgba(100, 100, 100, 0.15) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.9) inset;
+}
+
+.theme-light .checkbox-container.is-enabled {
+    border: 1px solid var(--color-l-green-300);
+    background: var(--color-l-green-500);
+}
+
+.theme-dark .checkbox-container {
+    background: var(--color-d-gray-40);
+    border: 1px solid var(--color-d-gray-30);
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.1), 0px 0px 2px 1px rgba(0, 0, 0, 0.35) inset;
+}
+
+.theme-dark .checkbox-container::after {
+    background: var(--color-d-white);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.45), 0px -2px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.35) inset;
+}
+
+.theme-dark .checkbox-container.is-enabled {
+    border: 1px solid var(--color-d-green-700);
+    background: var(--color-d-green-900);
+}
+
+/*───────── Loading Progress Status in Modals ──────────*/
+.is-loading:before {
+    border-radius: var(--scale-2-4);
+    border: 1px solid var(--background-modifier-border);
+}
+
+.theme-light .is-loading:before {
+    background: var(--color-l-green-500);
+}
+
+.theme-dark .is-loading:before {
+    background: var(--color-d-green-900);
+}
+
+/*─────────Menu/More Options Modal──────────*/
+.menu {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--scale-2-4);
+}
+
+.theme-light .menu {
+    box-shadow: var(--shadow-s) var(--color-l-shadow-100);
+}
+
+.theme-dark .menu {
+    box-shadow: var(--shadow-m) var(--color-d-shadow-100);
+}
+
+.theme-light .menu .menu-item.selected:active {
+    color: var(--color-l-gray-50);
+    background: var(--color-l-gray-40);
+}
+
+.theme-light .menu .menu-item.selected:active .menu-item-icon svg {
+    background: var(--color-l-gray-50);
+}
+
+.theme-dark .menu .menu-item.selected:active {
+    color: var(--color-d-gray-40);
+    background: var(--color-d-blacker);
+}
+
+.theme-dark .menu .menu-item.selected:active .menu-item-icon svg {
+    background: var(--color-d-gray-40);
+}
+
+.menu .menu-item.menu-item-icon {
+    vertical-align: -1px;
+}
+
+/*─────────File Explorer Search Modal─────────*/
+.suggestion-container.mod-search-suggestion {
+    padding: var(--scale-0-0) var(--scale-0-0) var(--scale-0-0) var(--scale-0-0);
+    border-radius: var(--scale-2-4);
+    overflow-x: hidden;
+}
+
+.suggestion-container.mod-search-suggestion .suggestion {
+    padding: var(--scale-0-0) var(--scale-0-0) var(--scale-0-0) var(--scale-0-0);
+}
+
+.theme-light .suggestion-container.mod-search-suggestion {
+    box-shadow: var(--shadow-m) var(--color-l-shadow-100);
+}
+
+.theme-dark .suggestion-container.mod-search-suggestion {
+    box-shadow: var(--shadow-m) var(--color-d-shadow-100);
+}
+
+.suggestion-item.search-suggest-item.mod-complex:not(.mod-group) {
+    line-height: var(--line-height-0-5);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: var(--scale-2-3) var(--scale-2-8) var(--scale-2-3) var(--scale-2-8);
+    border-radius: 0;
+    margin: 0;
+}
+
+.suggestion-item.search-suggest-item.mod-complex:not(.mod-group):nth-of-child(6) {
+    margin-bottom: var(--scale-2-2);
+}
+
+.suggestion-item.search-suggest-item.mod-complex:not(.mod-group):last-child {
+    margin-bottom: var(--scale-2-2);
+}
+
+.suggestion-item.search-suggest-item.mod-complex:not(.mod-group):active {
+    color: var(--color-l-gray-50);
+    background: var(--color-l-gray-40);
+}
+
+.suggestion-item.search-suggest-item.mod-group {
+    font-size: var(--font-scale-0-5);
+    border-radius: 0;
+    border-bottom: 1px solid var(--background-modifier-border);
+    margin-bottom: var(--scale-2-2);
+}
+
+.suggestion-item .search-suggest-info-text {
+    color: var(--text-muted);
+}
+
+.suggestion-item .search-suggest-info-text:active {
+    color: var(--text-faint);
+}
+
+.list-item-part.search-suggest-icon.clickable-icon {
+    margin: 0;
+}
+
+/*─────────Prompts──────────*/
+.prompt {
+    border-radius: var(--scale-2-8);
+    overflow-y: hidden;
+    border: 1px solid var(--background-modifier-border);
+}
+
+.prompt-results {
+    padding-right: var(--scale-2-4);
+}
+
+.theme-light .prompt {
+    box-shadow: var(--shadow-xl) var(--color-l-shadow-100);
+}
+
+.theme-dark .prompt {
+    box-shadow: var(--shadow-xl) var(--color-d-shadow-100);
+}
+
+.prompt-instructions {
+    font-size: var(--font-scale-0-5);
+    display: flex;
+    justify-content: center;
+    padding: var(--scale-2-3) var(--scale-2-4) var(--scale-2-3) var(--scale-2-4);
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+.prompt-instruction:last-child {
+    margin-right: 0;
+}

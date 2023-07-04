@@ -1,0 +1,72 @@
+/*─────────Graph View Colors──────────*/
+.theme-light .graph-view.color-fill,
+.theme-dark .graph-view.color-fill {
+  color: var(--graph-color-node-resolved);
+}
+.theme-light .graph-view.color-fill-unresolved,
+.theme-dark .graph-view.color-fill-unresolved {
+  color: var(--graph-color-node-unresolved);
+  opacity: var(--graph-color-node-unresolved-opacity);
+}
+.theme-light .graph-view.color-fill-tag,
+.theme-dark .graph-view.color-fill-tag {
+  color: var(--graph-color-node-tag);
+}
+.theme-light .graph-view.color-fill-attachment,
+.theme-dark .graph-view.color-fill-attachment {
+  color: var(--graph-color-node-attachment);
+}
+.theme-light .graph-view.color-fill-focused,
+.theme-dark .graph-view.color-fill-focused { /* Focused Node */
+  color: var(--graph-color-node-focused);
+}
+.theme-light .graph-view.color-circle,
+.theme-dark .graph-view.color-circle { /* Node Cirle on Hover (Border) */
+  color: var(--graph-color-node-border-hover);
+}
+.theme-light .graph-view.color-arrow,
+.theme-dark .graph-view.color-arrow {
+  color: var(--graph-color-node-arrow);
+}
+.theme-light .graph-view.color-line,
+.theme-dark .graph-view.color-line {
+  color: var(--graph-color-node-line);
+}
+.theme-light .graph-view.color-line-highlight,
+.theme-dark .graph-view.color-line-highlight { /* Node Line on Hover */
+  color: var(--graph-color-node-line-hover);
+}
+.theme-light .graph-view.color-text,
+.theme-dark .graph-view.color-text {
+  color: var(--graph-color-node-text);
+}
+
+/*~ Graph View Controls for Light Theme ~*/
+.theme-light .graph-controls {
+  background-color: var(--color-l-white);
+  color: var(--color-l-gray-60);
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: var(--shadow-s) var(--color-l-shadow-100);
+}
+.theme-light .graph-controls.is-close {
+  min-width: inherit;
+  box-shadow: none;
+}
+.theme-light .graph-controls .setting-item-name {
+  color: var(--color-l-gray-80);
+}
+
+/*~ Graph View Controls for Dark Theme ~*/
+.theme-dark .graph-controls {
+  background-color: var(--color-d-gray-70);
+  color: var(--color-d-gray-50);
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: var(--shadow-s) var(--color-d-shadow-100);
+}
+.theme-dark .graph-controls.is-close {
+  min-width: inherit;
+  box-shadow: none;
+}
+.theme-dark .graph-controls .setting-item-name {
+  color: var(--color-d-gray-10);
+}

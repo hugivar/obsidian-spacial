@@ -1,0 +1,183 @@
+/*────────────────────────────────────
+        Buttons Component
+────────────────────────────────────*/
+/* don't remove !important */
+.theme-light button,
+.theme-dark button {
+    font-family: var(--font-interface-theme) !important;
+    padding: var(--scale-2-3) var(--scale-2-8) var(--scale-2-4) var(--scale-2-8) !important;
+    margin-top: var(--scale-2-3);
+    margin-bottom: var(--scale-2-3);
+    margin-right: var(--scale-2-4);
+    border-radius: var(--scale-2-10);
+    transition: var(--duration-superfast) var(--motion-smooth);
+}
+
+.theme-light button:last-child,
+.theme-dark button:last-child {
+    margin-right: 0;
+}
+
+.theme-light button:only-child,
+.theme-dark button:only-child {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mod-community-plugin .setting-item-control .theme-light button,
+.mod-community-plugin .setting-item-control .theme-dark button {
+    box-shadow: none;
+}
+
+.graph-controls .theme-light button,
+.graph-controls .theme-dark button {
+    font-size: var(--font-scale-0);
+}
+
+.theme-light button.copy-code-button,
+.theme-dark button.copy-code-button {
+    padding: var(--scale-2-1) var(--scale-2-4) var(--scale-2-3) var(--scale-2-4) !important;
+    border-radius: var(--scale-2-2);
+    margin-top: var(--scale-2-2);
+    margin-right: var(--scale-2-2);
+}
+
+.theme-light .modal button,
+.theme-light .graph-controls button,
+.theme-light .workspace button,
+.theme-light .popover button {
+    border: 1px solid rgba(100, 100, 100, 0.4);
+    box-shadow: 0px -2px 0px 0px rgba(100, 100, 100, 0.4) inset, 0px 2px 4px 0px rgba(100, 100, 100, 0.3);
+}
+
+.theme-light .modal button:active,
+.theme-light .graph-controls button:active,
+.theme-light .workspace button:active,
+.theme-light .popover button:active {
+    box-shadow: 0px 0px 0px 2px rgba(100, 100, 100, 0.3) inset, 0px 1px 1px 0px rgba(100, 100, 100, 0.1);
+    transition: var(--duration-superfast) var(--motion-smooth);
+}
+
+.theme-dark .modal button,
+.theme-dark .graph-controls button,
+.theme-dark .workspace button,
+.theme-dark .popover button {
+    color: var(--color-d-white);
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.28) inset, 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.theme-dark .modal button:active,
+.theme-dark .graph-controls button:active,
+.theme-dark .workspace button:active,
+.theme-dark .popover button:active {
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.15) inset, 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    transition: var(--duration-superfast) var(--motion-smooth);
+}
+
+.theme-light .modal button:not(.mod-cta, .mod-warning),
+.theme-light .modal.mod-settings button:not(.mod-cta, .mod-warning),
+.theme-light .workspace button:not(.graph-controls button, .document-search-button),
+.theme-light .popover button:not(.graph-controls button, .document-search-button),
+.theme-light .search-result-file-match-destination-file {
+    color: var(--color-l-gray-80);
+    background: var(--color-l-whiter);
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    box-shadow: 0px -2px 0px 0px rgba(100, 100, 100, 0.2) inset, 0px 2px 4px 0px rgba(100, 100, 100, 0.1);
+}
+
+.theme-light .modal button:not(.mod-cta, .mod-warning):hover,
+.theme-light .modal button:not(.mod-cta, .mod-warning):focus,
+.theme-light .modal.mod-settings button:not(.mod-cta, .mod-warning):hover,
+.theme-light .modal.mod-settings button:not(.mod-cta, .mod-warning):focus,
+.theme-light .workspace button:not(.graph-controls button, .document-search-button):hover,
+.theme-light .workspace button:not(.graph-controls button, .document-search-button):focus,
+.theme-light .popover button:not(.graph-controls button, .document-search-button):hover,
+.theme-light .popover button:not(.graph-controls button, .document-search-button):focus,
+.theme-light .search-result-file-match-destination-file:hover,
+.theme-light .search-result-file-match-destination-file:focus {
+    background: var(--color-l-gray-10);
+}
+
+.theme-light .modal button:not(.mod-cta, .mod-warning):active,
+.theme-light .modal.mod-settings button:not(.mod-cta, .mod-warning):active,
+.theme-light .workspace button:not(.graph-controls button, .document-search-button):active,
+.theme-light .popover button:not(.graph-controls button, .document-search-button):active,
+.theme-light .search-result-file-match-destination-file:active {
+    box-shadow: 0px 0px 0px 2px rgba(100, 100, 100, 0.1) inset, 0px 1px 1px 0px rgba(100, 100, 100, 0.1);
+    transition: var(--duration-superfast) var(--motion-smooth);
+}
+
+.theme-dark .modal button:not(.mod-cta, .mod-warning),
+.theme-dark .modal.mod-settings button:not(.mod-cta, .mod-warning),
+.theme-dark .workspace button:not(.graph-controls button, .document-search-button),
+.theme-dark .popover button:not(.graph-controls button, .document-search-button),
+.theme-dark .search-result-file-match-destination-file {
+    color: var(--color-d-white);
+    background: var(--color-d-black);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.3) inset, 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.theme-dark .modal button:not(.mod-cta, .mod-warning):hover,
+.theme-dark .modal.mod-settings button:not(.mod-cta, .mod-warning):hover,
+.theme-dark .workspace button:not(.graph-controls button, .document-search-button):hover,
+.theme-dark .popover button:not(.graph-controls button, .document-search-button):hover,
+.theme-dark .search-result-file-match-destination-file:hover {
+    background: var(--color-d-blacker);
+}
+
+.theme-dark .modal button:not(.mod-cta, .mod-warning):active,
+.theme-dark .modal.mod-settings button:not(.mod-cta, .mod-warning):active,
+.theme-dark .workspace button:not(.graph-controls button, .document-search-button):active,
+.theme-dark .popover button:not(.graph-controls button, .document-search-button):active,
+.theme-dark .search-result-file-match-destination-file:active {
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2) inset, 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+    transition: var(--duration-superfast) var(--motion-smooth);
+}
+
+button.clickable-icon[aria-label="Change sort order"] {
+    margin-left: 0;
+    margin-right: var(--scale-2-4);
+}
+
+span.community-theme-remove-button.clickable-icon {
+    top: 6px;
+    right: -3px;
+    color: var(--text-on-accent);
+    padding: var(--scale-2-2) var(--scale-2-2) var(--scale-0-0) var(--scale-2-2);
+}
+
+.theme-light span.community-theme-remove-button.clickable-icon {
+    color: var(--color-l-gray-20);
+    background: var(--color-l-red-300);
+    box-shadow: 0px 1px 2px 0px rgba(100, 100, 100, 0.5), 0px -2px 0px 0px rgba(100, 20, 20, 0.18) inset;
+}
+
+.theme-light span.community-theme-remove-button.clickable-icon:hover {
+    background: var(--color-l-red-500);
+}
+
+.theme-light span.community-theme-remove-button.clickable-icon:active {
+    color: var(--color-l-red-900);
+    background: var(--color-l-red-700);
+    box-shadow: 0px 0px 0px 2px rgba(150, 20, 20, 0.55) inset;
+    transition: var(--duration-superfast) var(--motion-smooth);
+}
+
+.theme-dark span.community-theme-remove-button.clickable-icon {
+    color: var(--color-d-white);
+    background: var(--color-d-red-500);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25), 0px -2px 0px 0px rgba(85, 8, 8, 0.38) inset;
+}
+
+.theme-dark span.community-theme-remove-button.clickable-icon:hover {
+    background: var(--color-d-red-300);
+}
+
+.theme-dark span.community-theme-remove-button.clickable-icon:active {
+    color: var(--color-d-red-900);
+    background: var(--color-d-red-700);
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.45) inset;
+    transition: var(--duration-superfast) var(--motion-smooth);
+}
