@@ -4,10 +4,14 @@
     background-color: var(--background-secondary);
 }
 
-.spacial-active-line-highlight-border .markdown-source-view .cm-active.cm-line {
+.spacial-active-line-border .markdown-source-view .cm-active.cm-line {
     border-left: 2px solid var(--interactive-accent);
     margin-left: -2px !important;
-    background-color: var(--background-secondary);
+}
+
+.spacial-active-line-highlight-border .markdown-source-view .cm-active.cm-line {
+    @extend .spacial-active-line-highlight;
+    @extend .spacial-active-line-border;
 }
 
 /* Headings */
