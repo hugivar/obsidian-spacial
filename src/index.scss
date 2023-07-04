@@ -15,11 +15,12 @@
 
 // @use "content.scss";
 // @use "workspace.scss";
-// @use "graph.scss";
-// @use "plugins.scss";
+
 
 @use "fonts.scss";
 @use "variables.scss";
+@use "graph.scss";
+@use "plugins.scss";
 @use "color-schemes.scss";
 @use "editor.scss";
 @use "layout.scss";

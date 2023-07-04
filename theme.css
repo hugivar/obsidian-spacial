@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inconsolata:wght@200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Martel:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pathway+Extreme:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300;400;500;600;700;800;900;1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sono:wght@200;300;400;500;600;700;800&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Special+Elite&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Varela+Round&family=Ysabeau:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 @font-face {
   font-family: "Karla";
@@ -97,6 +98,23 @@
 }
 /* ---------- VARIABLES ---------- */
 body {
+  /* Colors */
+  --base-h: 212;
+  /* Base hue */
+  --base-s: 15%;
+  /* Base saturation */
+  --base-d: 13%;
+  /* Base lightness Dark Mode  - 0 is black */
+  --base-l: 97%;
+  /* Base lightness Light Mode  - 100 is white */
+  --accent-h: 215;
+  /* Accent hue */
+  --accent-s: 75%;
+  /* Accent saturation */
+  --accent-d: 70%;
+  /* Accent lightness Dark Mode */
+  --accent-l: 60%;
+  /* Accent lightness Light Mode */
   /* Headings */
   --h1-font: Karla;
   --h2-font: Karla;
@@ -113,6 +131,9 @@ body {
   /* Text */
   --bold-colors: rgb(var(--cpt-red));
   --italic-colors: rgb(var(--cpt-blue));
+  --text-faint: hsl(var(--base-h),
+          calc(var(--base-s) - 5%),
+          calc(var(--base-l) - 30%));
 }
 
 .theme-light {
@@ -138,6 +159,8 @@ body {
   --cpt-purple: 144, 120, 241;
   --cpt-black: 74, 52, 28;
   --cpt-white: 240, 240, 240;
+  --cpt-gray: 130, 106, 74;
+  --cpt-gray-70: 84, 81, 81;
   /* Background */
   --background-primary: rgb(var(--cpt-core));
   --background-primary-alt: rgb(var(--cpt-core-alt));
@@ -189,6 +212,8 @@ body {
   --cpt-purple: 147, 134, 200;
   --cpt-black: 10, 10, 10;
   --cpt-white: 240, 240, 240;
+  --cpt-gray: 130, 106, 74;
+  --cpt-gray-70: 84, 81, 81;
   /* Background */
   --background-primary: rgb(var(--cpt-core));
   --background-primary-alt: rgb(var(--cpt-core-alt));
@@ -215,6 +240,171 @@ body {
   --text-accent-hover: rgba(var(--cpt-accent), 0.7);
   --text-on-accent: var(--text-on-accent-inverted);
   --text-selection: rgba(var(--cpt-accent), 0.1);
+}
+
+body {
+  --graph-controls-width: 240px;
+  --graph-text: rgb(var(--cpt-black));
+  --graph-node: rgb(var(--cpt-gray-70));
+  --graph-node-unresolved: var(--text-faint);
+  --graph-node-focused: rgb(var(--cpt-accent));
+  --graph-node-tag: rgb(var(--cpt-blue));
+}
+
+/*────────────────────────────────────
+++++++++++++++++++++++++++++++++++++++
+            Community Plugins
+++++++++++++++++++++++++++++++++++++++
+──────────────────────────────────────*/
+/*────────────────────────────────────
+   Focus Mode Plugin Styling
+────────────────────────────────────*/
+.focus-mode .cm-s-obsidian .cm-line:not(.cm-active),
+.focus-mode .cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line {
+  opacity: 0.7 !important;
+  filter: saturate(0.7) !important;
+}
+
+/*────────────────────────────────────
+                Dataview
+────────────────────────────────────*/
+/* Dataview Tables */
+table.dataview {
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+/* padding fix for LP */
+.block-language-dataview.node-insert-event > div.markdown-rendered.cm-embed-block {
+  padding: 0;
+}
+
+.markdown-source-view.mod-cm6 .dataview {
+  /* Source View */
+}
+
+.markdown-source-view.mod-cm6 .dataview.table-view-table {
+  margin-bottom: 0;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.markdown-source-view.mod-cm6 .dataview.table-view-table > thead > tr > th {
+  font-size: var(--font-scale-1);
+  border-width: 0px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+.markdown-source-view.mod-cm6 .dataview.table-view-table thead,
+.markdown-source-view.mod-cm6 .dataview.table-view-table tr,
+.markdown-source-view.mod-cm6 .dataview.table-view-table td,
+.markdown-source-view.mod-cm6 .dataview.table-view-table th {
+  padding: 4px 10px;
+}
+
+.markdown-source-view.mod-cm6 .dataview.table-view-table thead {
+  border: none;
+  margin: 0;
+}
+
+.markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th {
+  font-size: var(--font-scale-1);
+  color: var(--md-color-code-red-1);
+  background: var(--background-secondary);
+}
+
+.markdown-source-view.mod-cm6 .dataview.table-view-table .table-view-tbody tr {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-source-view.mod-cm6 .dataview.table-view-table .table-view-tbody td {
+  padding: 4px 10px;
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+.theme-light .markdown-source-view.mod-cm6 .dataview.table-view-table .table-view-tbody tr {
+  background: var(--color-l-whiter);
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .dataview.table-view-table .table-view-tbody tr {
+  background: var(--color-d-blacker);
+}
+
+.markdown-source-view.mod-cm6 .dataview.table-view-table .table-view-tbody td:not(td:last-of-type) {
+  padding: 4px 10px;
+}
+
+.markdown-source-view.mod-cm6 .dataview.table-view-table ul.dataview-ul {
+  list-style: none;
+}
+
+.markdown-preview-view .dataview {
+  /* Preview View */
+}
+
+.markdown-preview-view .dataview.table-view-table {
+  border: 1px solid var(--background-modifier-border);
+}
+
+.markdown-preview-view .dataview.table-view-table > thead > tr > th {
+  font-size: var(--font-scale-1);
+  border-width: 0px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+.markdown-preview-view .dataview.table-view-table .table-view-tbody tr {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-preview-view .dataview.table-view-table .table-view-tbody td {
+  padding: 4px 10px;
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+.markdown-preview-view .dataview.table-view-table ul.dataview-ul {
+  list-style: none;
+}
+
+/* Dataview Task List */
+.markdown-source-view.mod-cm6 .cm-embed-block .block-language-dataview h4 {
+  margin: 15px 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-embed-block .block-language-dataview h4:first-of-type {
+  margin-top: 0;
+}
+
+/* Dataview List */
+.markdown-source-view.mod-cm6 .cm-embed-block .block-language-dataview ul.dataview.list-view-ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*────────────────────────────────────
+        Supercharged Links
+────────────────────────────────────*/
+/* Supercharged Links Reset for Source View */
+.cm-s-obsidian span.cm-hmd-internal-link span[data-link-tags],
+.cm-s-obsidian span[data-link-tags] .cm-underline {
+  color: inherit;
+  text-decoration: inherit;
+  text-underline-position: inherit;
+  text-decoration-thickness: inherit;
+  transition: var(--duration-superfast) var(--motion-smooth);
+}
+
+/* Supercharged Links Reset for Preview View */
+.internal-link.data-link-icon {
+  color: inherit;
+  transition: var(--duration-superfast) var(--motion-smooth);
+}
+
+/*────────────────────────────────────
+       MAKE.md
+────────────────────────────────────*/
+.mk-flow-titlebar {
+  display: none;
 }
 
 /* ---------- COLOR SCHEMES ---------- */
@@ -1299,15 +1489,6 @@ body:not(.spacial-workspace-background) .prompt {
 .workspace-split:not(.mod-root) .graph-controls.is-close,
 .workspace-split:not(.mod-root) .graph-controls:not(.is-close) {
   background-color: rgb(var(--cpt-crust));
-}
-
-.spacial-card-layout .workspace-split:not(.mod-root) .graph-controls,
-.spacial-card-layout .workspace-split:not(.mod-root) .graph-controls.is-close,
-.spacial-card-layout .workspace-split:not(.mod-root) .graph-controls:not(.is-close),
-.workspace-leaf .graph-controls,
-.workspace-leaf .graph-controls.is-close,
-.workspace-leaf .graph-controls:not(.is-close) {
-  background-color: rgb(var(--side));
 }
 
 body {
@@ -3434,6 +3615,31 @@ settings:
       id: spacial-tooltip-toggle
       title: Hide Tooltips
       type: class-toggle
+
+*/
+/* @plugins
+core:
+- audio-recorder
+- backlink
+- command-palette
+- daily-notes
+- editor-status
+- file-explorer
+- file-recovery
+- global-search
+- graph
+- outgoing-link
+- outline
+- page-preview
+- starred
+- switcher
+- sync
+- tag-pane
+
+community:
+- dataview
+- obsidian-style-settings
+
 */
 
 /*# sourceMappingURL=theme.css.map */

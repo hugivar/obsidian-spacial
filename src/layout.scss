@@ -31,15 +31,6 @@ body:not(.spacial-workspace-background) .prompt {
     background-color: rgb(var(--cpt-crust));
 }
 
-.spacial-card-layout .workspace-split:not(.mod-root) .graph-controls,
-.spacial-card-layout .workspace-split:not(.mod-root) .graph-controls.is-close,
-.spacial-card-layout .workspace-split:not(.mod-root) .graph-controls:not(.is-close),
-.workspace-leaf .graph-controls,
-.workspace-leaf .graph-controls.is-close,
-.workspace-leaf .graph-controls:not(.is-close) {
-    background-color: rgb(var(--side));
-}
-
 body {
     --card-background-color: rgb(var(--cpt-crust));
 }

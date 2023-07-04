@@ -1,5 +1,23 @@
 /* ---------- VARIABLES ---------- */
 body {
+    /* Colors */
+    --base-h: 212;
+    /* Base hue */
+    --base-s: 15%;
+    /* Base saturation */
+    --base-d: 13%;
+    /* Base lightness Dark Mode  - 0 is black */
+    --base-l: 97%;
+    /* Base lightness Light Mode  - 100 is white */
+    --accent-h: 215;
+    /* Accent hue */
+    --accent-s: 75%;
+    /* Accent saturation */
+    --accent-d: 70%;
+    /* Accent lightness Dark Mode */
+    --accent-l: 60%;
+    /* Accent lightness Light Mode */
+
     /* Headings */
     --h1-font: Karla;
     --h2-font: Karla;
@@ -18,6 +36,9 @@ body {
     /* Text */
     --bold-colors: rgb(var(--cpt-red));
     --italic-colors: rgb(var(--cpt-blue));
+    --text-faint: hsl(var(--base-h),
+            calc(var(--base-s) - 5%),
+            calc(var(--base-l) - 30%));
 }
 
 .theme-light {
@@ -45,6 +66,8 @@ body {
     --cpt-purple: 144, 120, 241;
     --cpt-black: 74, 52, 28;
     --cpt-white: 240, 240, 240;
+    --cpt-gray: 130, 106, 74;
+    --cpt-gray-70: 84, 81, 81;
 
     /* Background */
     --background-primary: rgb(var(--cpt-core));
@@ -104,6 +127,9 @@ body {
     --cpt-purple: 147, 134, 200;
     --cpt-black: 10, 10, 10;
     --cpt-white: 240, 240, 240;
+    --cpt-gray: 130, 106, 74;
+    --cpt-gray-70: 84, 81, 81;
+
 
     /* Background */
     --background-primary: rgb(var(--cpt-core));
