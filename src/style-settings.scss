@@ -1045,6 +1045,108 @@ settings:
       type: variable-number
       default: 4
       format: px
+   -
+		id: tags
+		title: Tags
+		type: heading
+		level: 2
+		collapsed: true
+	-
+				id: tag-radius
+				title: Tag Shape
+				type: variable-select
+				default: '2em'
+				allowEmpty: false
+				options:
+					-
+						label: 'Pill'
+						value: '2em'
+					-
+						label: 'Rounded'
+						value: '4px'
+					-
+						label: 'Square'
+						value: '0em'
+	-
+				id: tag-border-width
+				title: Tag border
+				type: variable-select
+				default: '0px'
+				allowEmpty: false
+				options:
+					-
+						label: 'None'
+						value: '0px'
+					-
+						label: 'Thin'
+						value: '1px'
+					-
+						label: 'Thick'
+						value: '2px'
+	-
+				id: tag-color
+				title: Tag text color
+				type: variable-themed-color
+				format: rgb
+				opacity: false
+				default-light: 'rgb(var(--interactive-accent-rgb))'
+				default-dark: 'rgb(var(--interactive-accent-rgb))'
+	-
+				id: tag-color-hover
+				title: Tag text color (hover)
+				type: variable-themed-color
+				format: rgb
+				opacity: false
+				default-light: 'rgb(var(--interactive-accent-rgb))'
+				default-dark: 'rgb(var(--interactive-accent-rgb))'
+	-
+				id: tag-background
+				title: Tag background color
+				type: variable-themed-color
+				format: rgb
+				opacity: true
+				default-light: 'rgba(var(--interactive-accent-rgb), 0.15)'
+				default-dark: 'rgba(var(--interactive-accent-rgb), 0.15)'
+	-
+				id: tag-background-hover
+				title: Tag background color (hover)
+				type: variable-themed-color
+				format: rgb
+				opacity: true
+				default-light: 'rgba(var(--interactive-accent-rgb), 0.25)'
+				default-dark: 'rgba(var(--interactive-accent-rgb), 0.25)'
+	-
+				id: tag-decoration
+				title: Tag text decoration
+				type: variable-select
+				default: 'none'
+				allowEmpty: false
+				options:
+					-
+						label: 'None'
+						value: 'none'
+					-
+						label: 'Thin underline'
+						value: 'underline 1px'
+					-
+						label: 'Thick underline'
+						value: 'underline 2px'
+	-
+				id: tag-decoration-hover
+				title: Tag text decoration (hover)
+				type: variable-select
+				default: 'none'
+				allowEmpty: false
+				options:
+					-
+						label: 'None'
+						value: 'none'
+					-
+						label: 'Thin underline'
+						value: 'underline 1px'
+					-
+						label: 'Thick underline'
+						value: 'underline 2px'
    - 
       id: spacial-custom-checkbox-heading
       title: Checkbox
@@ -1324,15 +1426,27 @@ settings:
       step: 0.05
    - 
       id: spacial-rainbow-folders-heading
-      title: Rainbow Folders
+      title: Folder Colors
       type: heading
       level: 2
       collapsed: true
    -
-      id: spacial-rainbow-folders
-      title: Enable Rainbow Folders
-      description: Customize your folder colors
-      type: class-toggle
+      id: folder-color-options
+      title: Folder Colors
+      description: Enable or disable rainbow folders (original rainbow folders created by Lithou)
+      type: class-select
+      allowEmpty: false
+      default: folder-default
+      options:
+         -
+               label: Default
+               value: folder-default
+         -
+               label: Rainbow Folder Titles
+               value: folder-rainbow-titles
+         -
+               label: Rainbow Folder Backgrounds
+               value: folder-rainbow-backgrounds
    -
       id: spacial-translucent-window-heading
       title: Translucent Window

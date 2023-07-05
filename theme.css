@@ -134,6 +134,19 @@ body {
   --text-faint: hsl(var(--base-h),
           calc(var(--base-s) - 5%),
           calc(var(--base-l) - 30%));
+  /* Tag */
+  --tag-color: var(--text-accent);
+  --tag-color-hover: var(--text-accent);
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-background: rgba(var(--cpt-accent), 0.15);
+  --tag-background-hover: rgba(var(--cpt-accent), 0.25);
+  --tag-border-color: rgba(var(--cpt-accent), 0.15);
+  --tag-border-color-hover: rgba(var(--cpt-accent), 0.25);
+  --tag-border-width: 0px;
+  --tag-padding-x: 0.65em;
+  --tag-padding-y: 0.25em;
+  --tag-radius: 2em;
 }
 
 .theme-light {
@@ -1963,135 +1976,65 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
 }
 
 /* Rainbow Folders */
-.spacial-rainbow-folders .nav-folder-title,
-.spacial-rainbow-folders .nav-folder-collapse-indicator,
-.spacial-rainbow-folders .tree-item.nav-folder > .tree-item-children.nav-folder-children > .tree-item.nav-file > .tree-item-self.is-clickable.nav-file-title {
-  color: var(--text-on-accent-inverted);
-  --nav-collapse-icon-color: var(--text-on-accent-inverted);
-  --nav-collapse-icon-color-collapsed: var(--text-on-accent-inverted);
-  --nav-item-color: var(--text-on-accent-inverted);
-  --nav-item-color-hover: var(--text-on-accent-inverted);
-  --nav-item-color-highlighted: var(--text-on-accent-inverted);
+.folder-rainbow-titles .nav-folder-title,
+.folder-rainbow-backgrounds .nav-folder-title {
+  color: rgb(var(--rainbow-folder-color));
+  --nav-collapse-icon-color: rgb(var(--rainbow-folder-color));
+  --nav-collapse-icon-color-collapsed: rgb(var(--rainbow-folder-color));
 }
 
-.spacial-rainbow-folders .nav-file-tag {
-  color: rgb(var(--cpt-text));
+.folder-rainbow-backgrounds .nav-folder-title {
+  background-color: rgba(var(--rainbow-folder-color), 0.3);
+  color: inherit;
+  --nav-collapse-icon-color: var(--text-normal);
+  --nav-collapse-icon-color-collapsed: var(--text-normal);
 }
 
-.spacial-rainbow-folders .nav-files-container > .tree-item.nav-folder > .tree-item-children > .tree-item.nav-file {
-  background-color: rgb(var(--cpt-white));
+.folder-rainbow-backgrounds.theme-crystal .nav-folder-title,
+.folder-rainbow-backgrounds.theme-ash-old .nav-folder-title {
+  background-color: rgba(var(--rainbow-folder-color), 0.13);
+  border: 0.25px solid rgb(var(--rainbow-folder-color));
+  margin-bottom: 5px;
+  color: rgb(var(--rainbow-folder-color));
+  --nav-collapse-icon-color: rgb(var(--rainbow-folder-color));
+  --nav-collapse-icon-color-collapsed: rgb(var(--rainbow-folder-color));
 }
 
-.spacial-rainbow-folders .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+2) {
-  background-color: rgb(var(--cpt-red));
-  border-color: rgb(var(--cpt-red));
-  border-radius: 5px;
-  margin-top: 2px;
+.nav-folder-children > .nav-folder:nth-child(8n+2) {
+  --rainbow-folder-color: var(--color-red-rgb);
 }
 
-.spacial-rainbow-folders .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+3) {
-  background-color: rgb(var(--cpt-orange));
-  border-color: rgb(var(--cpt-orange));
-  border-radius: 5px;
-  margin-top: 2px;
+.nav-folder-children > .nav-folder:nth-child(8n+3) {
+  --rainbow-folder-color: var(--color-orange-rgb);
 }
 
-.spacial-rainbow-folders .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+4) {
-  background-color: rgb(var(--cpt-yellow));
-  border-color: rgb(var(--cpt-yellow));
-  border-radius: 5px;
-  margin-top: 2px;
+.nav-folder-children > .nav-folder:nth-child(8n+4) {
+  --rainbow-folder-color: var(--color-yellow-rgb);
 }
 
-.spacial-rainbow-folders .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+5) {
-  background-color: rgb(var(--cpt-green));
-  border-color: rgb(var(--cpt-green));
-  border-radius: 5px;
-  margin-top: 2px;
+.nav-folder-children > .nav-folder:nth-child(8n+5) {
+  --rainbow-folder-color: var(--color-green-rgb);
 }
 
-.spacial-rainbow-folders .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+6) {
-  background-color: rgb(var(--cpt-cyan));
-  border-color: rgb(var(--cpt-cyan));
-  border-radius: 5px;
-  margin-top: 2px;
+.nav-folder-children > .nav-folder:nth-child(8n+6) {
+  --rainbow-folder-color: var(--color-cyan-rgb);
 }
 
-.spacial-rainbow-folders .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+7) {
-  background-color: rgb(var(--cpt-blue));
-  border-color: rgb(var(--cpt-blue));
-  border-radius: 5px;
-  margin-top: 2px;
+.nav-folder-children > .nav-folder:nth-child(8n+7) {
+  --rainbow-folder-color: var(--color-blue-rgb);
 }
 
-.spacial-rainbow-folders .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+8) {
-  background-color: rgb(var(--cpt-pink));
-  border-color: rgb(var(--cpt-pink));
-  border-radius: 5px;
-  margin-top: 2px;
+.nav-folder-children > .nav-folder:nth-child(8n+8) {
+  --rainbow-folder-color: var(--color-purple-rgb);
 }
 
-.spacial-rainbow-folders .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+9) {
-  background-color: rgb(var(--cpt-purple));
-  border-color: rgb(var(--cpt-purple));
-  border-radius: 5px;
-  margin-top: 2px;
+.nav-folder-children > .nav-folder:nth-child(8n+9) {
+  --rainbow-folder-color: var(--color-pink-rgb);
 }
 
-.spacial-rainbow-folders.spacial-colorschemes-dark-mystical-nights .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+2) {
-  background-color: rgb(var(--cpt-pink));
-  border-color: rgb(var(--cpt-pink));
-  border-radius: 5px;
-  margin-top: 2px;
-}
-
-.spacial-rainbow-folders.spacial-colorschemes-dark-mystical-nights .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+3) {
-  background-color: rgb(var(--cpt-purple));
-  border-color: rgb(var(--cpt-purple));
-  border-radius: 5px;
-  margin-top: 2px;
-}
-
-.spacial-rainbow-folders.spacial-colorschemes-dark-mystical-nights .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+4) {
-  background-color: rgb(var(--cpt-blue));
-  border-color: rgb(var(--cpt-blue));
-  border-radius: 5px;
-  margin-top: 2px;
-}
-
-.spacial-rainbow-folders.spacial-colorschemes-dark-mystical-nights .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+5) {
-  background-color: rgb(var(--cpt-cyan));
-  border-color: rgb(var(--cpt-cyan));
-  border-radius: 5px;
-  margin-top: 2px;
-}
-
-.spacial-rainbow-folders.spacial-colorschemes-dark-mystical-nights .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+6) {
-  background-color: rgb(var(--cpt-orange));
-  border-color: rgb(var(--cpt-orange));
-  border-radius: 5px;
-  margin-top: 2px;
-}
-
-.spacial-rainbow-folders.spacial-colorschemes-dark-mystical-nights .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+7) {
-  background-color: rgb(var(--cpt-green));
-  border-color: rgb(var(--cpt-green));
-  border-radius: 5px;
-  margin-top: 2px;
-}
-
-.spacial-rainbow-folders.spacial-colorschemes-dark-mystical-nights .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+8) {
-  background-color: rgb(var(--cpt-red));
-  border-color: rgb(var(--cpt-red));
-  border-radius: 5px;
-  margin-top: 2px;
-}
-
-.spacial-rainbow-folders.spacial-colorschemes-dark-mystical-nights .nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(8n+9) {
-  background-color: rgb(var(--cpt-purple));
-  border-color: rgb(var(--cpt-purple));
-  border-radius: 5px;
-  margin-top: 2px;
+.folder-rainbow-backgrounds .nav-folder.mod-root .nav-folder .nav-file-title {
+  --rainbow-folder-color: inherit;
+  color: rgb(var(--rainbow-folder-color));
 }
 
 /* Tranlucent Window */
@@ -3318,6 +3261,108 @@ settings:
       type: variable-number
       default: 4
       format: px
+   -
+		id: tags
+		title: Tags
+		type: heading
+		level: 2
+		collapsed: true
+	-
+				id: tag-radius
+				title: Tag Shape
+				type: variable-select
+				default: '2em'
+				allowEmpty: false
+				options:
+					-
+						label: 'Pill'
+						value: '2em'
+					-
+						label: 'Rounded'
+						value: '4px'
+					-
+						label: 'Square'
+						value: '0em'
+	-
+				id: tag-border-width
+				title: Tag border
+				type: variable-select
+				default: '0px'
+				allowEmpty: false
+				options:
+					-
+						label: 'None'
+						value: '0px'
+					-
+						label: 'Thin'
+						value: '1px'
+					-
+						label: 'Thick'
+						value: '2px'
+	-
+				id: tag-color
+				title: Tag text color
+				type: variable-themed-color
+				format: rgb
+				opacity: false
+				default-light: 'rgb(var(--interactive-accent-rgb))'
+				default-dark: 'rgb(var(--interactive-accent-rgb))'
+	-
+				id: tag-color-hover
+				title: Tag text color (hover)
+				type: variable-themed-color
+				format: rgb
+				opacity: false
+				default-light: 'rgb(var(--interactive-accent-rgb))'
+				default-dark: 'rgb(var(--interactive-accent-rgb))'
+	-
+				id: tag-background
+				title: Tag background color
+				type: variable-themed-color
+				format: rgb
+				opacity: true
+				default-light: 'rgba(var(--interactive-accent-rgb), 0.15)'
+				default-dark: 'rgba(var(--interactive-accent-rgb), 0.15)'
+	-
+				id: tag-background-hover
+				title: Tag background color (hover)
+				type: variable-themed-color
+				format: rgb
+				opacity: true
+				default-light: 'rgba(var(--interactive-accent-rgb), 0.25)'
+				default-dark: 'rgba(var(--interactive-accent-rgb), 0.25)'
+	-
+				id: tag-decoration
+				title: Tag text decoration
+				type: variable-select
+				default: 'none'
+				allowEmpty: false
+				options:
+					-
+						label: 'None'
+						value: 'none'
+					-
+						label: 'Thin underline'
+						value: 'underline 1px'
+					-
+						label: 'Thick underline'
+						value: 'underline 2px'
+	-
+				id: tag-decoration-hover
+				title: Tag text decoration (hover)
+				type: variable-select
+				default: 'none'
+				allowEmpty: false
+				options:
+					-
+						label: 'None'
+						value: 'none'
+					-
+						label: 'Thin underline'
+						value: 'underline 1px'
+					-
+						label: 'Thick underline'
+						value: 'underline 2px'
    - 
       id: spacial-custom-checkbox-heading
       title: Checkbox
@@ -3597,15 +3642,27 @@ settings:
       step: 0.05
    - 
       id: spacial-rainbow-folders-heading
-      title: Rainbow Folders
+      title: Folder Colors
       type: heading
       level: 2
       collapsed: true
    -
-      id: spacial-rainbow-folders
-      title: Enable Rainbow Folders
-      description: Customize your folder colors
-      type: class-toggle
+      id: folder-color-options
+      title: Folder Colors
+      description: Enable or disable rainbow folders (original rainbow folders created by Lithou)
+      type: class-select
+      allowEmpty: false
+      default: folder-default
+      options:
+         -
+               label: Default
+               value: folder-default
+         -
+               label: Rainbow Folder Titles
+               value: folder-rainbow-titles
+         -
+               label: Rainbow Folder Backgrounds
+               value: folder-rainbow-backgrounds
    -
       id: spacial-translucent-window-heading
       title: Translucent Window
