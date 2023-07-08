@@ -1,10 +1,20 @@
-@use "fonts.scss";
+/* Variables */
 @use "variables.scss";
+
+/* Obsidian app */
+@use "fonts.scss";
 @use "notification.scss";
-@use "plugins.scss";
-@use "color-schemes.scss";
 @use "editor.scss";
 @use "layout.scss";
 @use "show-hide-elements.scss";
 @use "launch.scss";
 @use "style-settings.scss";
+
+/* Spacial features */
+@use 'features/labeled-nav';
+
+/* Plugins */
+@use "plugins.scss";
+
+/* Color schemes */
+@use "color-schemes.scss";

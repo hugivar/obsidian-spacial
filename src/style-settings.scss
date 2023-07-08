@@ -1543,6 +1543,17 @@ settings:
       id: spacial-tooltip-toggle
       title: Hide Tooltips
       type: class-toggle
+   -
+      id: spacial-features
+      title: Featues
+      description: Toggle feautes
+      type: heading
+      level: 1
+      collapsed: true
+   -   
+      id: spacial-labeled-nav
+      title: Text labels for primary navigation
+      type: class-toggle
 
 */
 /* @plugins
