@@ -173,7 +173,6 @@ body {
   --cpt-black: 74, 52, 28;
   --cpt-white: 240, 240, 240;
   --cpt-gray: 130, 106, 74;
-  --cpt-gray-70: 84, 81, 81;
   /* Background */
   --background-primary: rgb(var(--cpt-core));
   --background-primary-alt: rgb(var(--cpt-core-alt));
@@ -226,7 +225,6 @@ body {
   --cpt-black: 10, 10, 10;
   --cpt-white: 240, 240, 240;
   --cpt-gray: 130, 106, 74;
-  --cpt-gray-70: 84, 81, 81;
   /* Background */
   --background-primary: rgb(var(--cpt-core));
   --background-primary-alt: rgb(var(--cpt-core-alt));
@@ -253,15 +251,6 @@ body {
   --text-accent-hover: rgba(var(--cpt-accent), 0.7);
   --text-on-accent: var(--text-on-accent-inverted);
   --text-selection: rgba(var(--cpt-accent), 0.1);
-}
-
-body {
-  --graph-controls-width: 240px;
-  --graph-text: rgb(var(--cpt-black));
-  --graph-node: rgb(var(--cpt-gray-70));
-  --graph-node-unresolved: var(--text-faint);
-  --graph-node-focused: rgb(var(--cpt-accent));
-  --graph-node-tag: rgb(var(--cpt-blue));
 }
 
 /*────────────────────────────────────
@@ -3398,6 +3387,55 @@ settings:
       title: Enable Rainbow Tags
       description: Customize your tag with rainbow colors
       type: class-toggle
+   -
+		id: graphs
+		title: Graphs
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: graph-line
+		title: Line color
+		description: Changing graph colors requires closing and reopening graph panes or restarting Obsidian
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: graph-node
+		title: Node color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: graph-node-focused
+		title: Active node color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-  
+		id: graph-node-tag
+		title: Tag node color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-  
+		id: graph-node-attachment
+		title: Attachment node color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
+	-  
+		id: graph-node-unresolved
+		title: Unresolved node color
+		type: variable-themed-color
+		format: hex
+		default-light: '#'
+		default-dark: '#'
 
    #---------- L A Y O U T ----------
    - 
