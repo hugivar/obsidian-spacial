@@ -3,19 +3,8 @@
 Spacial is an [Obsidian](https://obsidian.md/) theme that gives you the space to customize Obsidian to your liking. Customize colors, fonts, feature toggles, and more with the customization plugin [Style Settings plugin](https://github.com/mgmeyers/obsidian-style-settings).
 ## About Spacial
 
-- [Screenshots](#screenshots)
 - [Installation](#installation)
-- [Companion plugins](#companion-plugins)
-- [Settings](#settings)
-- [Color schemes](#color-schemes)
-- [Plugin support](#plugin-support)
-- [Helper classes](#helper-filters-and-classes)
-- [Alternate checkboxes](#alternate-checkboxes)
-- [Hotkeys](#hotkeys)
-- [Contributing](#contributing)
 - [Developers](#developers)
-- [License](#license)
-- [Disclaimer](#disclaimer)
 
 ## Installation
 
