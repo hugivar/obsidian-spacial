@@ -10,6 +10,9 @@
 @use "launch.scss";
 @use "style-settings.scss";
 
+/* Editor */
+@use "editor/links.scss";
+
 /* Spacial features */
 @use 'features/labeled-nav';
 

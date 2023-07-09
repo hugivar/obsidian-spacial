@@ -1183,6 +1183,31 @@ settings:
       description: Customize your tag with rainbow colors
       type: class-toggle
    -
+      id: link-options
+      title: Links
+      type: heading
+      level: 2
+      collapsed: true
+   -
+      id: link-style
+      title: Link Style
+      type: class-select
+      allowEmpty: false
+      default: link-default
+      options:
+         -
+            label: Default
+            value: link-default
+         -
+            label: Web
+            value: link-web
+         -
+            label: Emphasized
+            value: link-em
+         -
+            label: Button
+            value: link-button  
+   -
 		id: graphs
 		title: Graphs
 		type: heading
