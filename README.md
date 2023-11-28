@@ -30,5 +30,5 @@ pnpm install
 pnpm watch
 ```
 
-This builds one file, the `obsidian.css` distribution file (for the community themes store) which is minified and also copied to your vault for live reload.
+This builds one file, the `theme.css` distribution file (for the community themes store) which is minified and also copied to your vault for live reload.
 
