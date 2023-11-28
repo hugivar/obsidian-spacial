@@ -1,7 +1,7 @@
 /* ---------- STYLE SETTINGS ---------- */
 .style-settings-heading[data-id='spacial'] {
    font-weight: bold;
-   border-bottom: 1px solid rgb(var(--cpt-accent));
+   border-bottom: 1px solid rgb(var(--spa-accent));
 }
 
 .style-settings-heading:not([data-level='0'], .is-collapsed) {
@@ -9,11 +9,11 @@
 }
 
 .style-settings-heading:not([data-level='0'])+.style-settings-container {
-   border: 1px solid rgba(var(--cpt-text), 0.2);
+   border: 1px solid rgba(var(--spa-text), 0.2);
    border-radius: var(--radius-s);
    padding: var(--size-4-2);
    padding-left: var(--size-4-6);
-   background-color: rgba(var(--cpt-crust), 0.3);
+   background-color: rgba(var(--spa-crust), 0.3);
    overflow-x: hidden;
 }
 
@@ -29,11 +29,11 @@ body:not(.custom-font) .setting-item[data-id='font-monospace-custom'] {
 }
 
 .style-settings-heading:not([data-level='0'])+.style-settings-container {
-   border: 1px solid rgba(var(--cpt-text), 0.2);
+   border: 1px solid rgba(var(--spa-text), 0.2);
    border-radius: var(--radius-s);
    padding: var(--size-4-2);
    padding-left: var(--size-4-6);
-   background-color: rgba(var(--cpt-crust), 0.3);
+   background-color: rgba(var(--spa-crust), 0.3);
    overflow-x: hidden;
 }
 
@@ -86,75 +86,63 @@ settings:
    - 
       id: spacial-colors-heading
       title: Colors
-      description: Theme Accent, Colorschemes
+      description: Theme Accent
       type: heading
       level: 1
       collapsed: true
    - 
-      id: cpt-accent
+      id: spa-accent
       title: Theme Accent
-      description: Change the theme accent as you like
-      type: variable-select
+      description: Select your preferred accent
+      type: class-select
       allowEmpty: false
-      default: var(--cpt-purple)
+      default: spa-full-palette
       options:
-         - 
-            label: Red
-            value: var(--cpt-red)
-         - 
-            label: Orange
-            value: var(--cpt-orange)
-         - 
-            label: Yellow
-            value: var(--cpt-yellow)
-         - 
-            label: Green
-            value: var(--cpt-green)
-         - 
-            label: Cyan
-            value: var(--cpt-cyan)
-         - 
-            label: Blue
-            value: var(--cpt-blue)
+         -
+            label: Full palette
+            value: spa-full-palette
+         -
+            label: Rosewater
+            value: spa-accent-rosewater
+         -
+            label: Flamingo
+            value: spa-accent-flamingo
          -
             label: Pink
-            value: var(--cpt-pink)
-         - 
-            label: Purple
-            value: var(--cpt-purple)
-   - 
-      id: spacial-colorshemes-light
-      title: Light Theme Colorscheme
-      type: class-select
-      allowEmpty: false
-      default: default
-      options:
-      - 
-         label: Default
-         value: default
-      -
-         label: Notion
-         value: spacial-colorschemes-light-notion
-      - 
-         label: Gruvbox
-         value: spacial-colorschemes-light-gruvbox
-      - 
-         label: Solarized
-         value: spacial-colorschemes-light-solarized
-   - 
-      id: spacial-colorshemes-dark
-      title: Dark Theme Colorscheme
-      type: class-select
-      allowEmpty: false
-      default: default
-      options:
-      - 
-         label: Default
-         value: default
-      -
-         label: Nightowl
-         value: spacial-colorschemes-dark-nightowl
-
+            value: spa-accent-pink
+         -
+            label: Mauve
+            value: spa-accent-mauve
+         -
+            label: Red
+            value: spa-accent-red
+         -
+            label: Maroon
+            value: spa-accent-maroon
+         -
+            label: Peach
+            value: spa-accent-peach
+         -
+            label: Yellow
+            value: spa-accent-yellow
+         -
+            label: Green
+            value: spa-accent-green
+         -
+            label: Teal
+            value: spa-accent-teal
+         -
+            label: Sky
+            value: spa-accent-sky
+         -
+            label: Sapphire
+            value: spa-accent-sapphire
+         -
+            label: Blue
+            value: spa-accent-blue
+         -
+            label: Lavender
+            value: spa-accent-lavender
    #---------- E D I T O R ----------
    - 
       id: spacial-editor-heading
@@ -341,62 +329,62 @@ settings:
       id: bold-color
       title: Bold Color
       type: variable-select
-      default: rgb(var(--cpt-red))
+      default: rgb(var(--spa-red))
       options:
          - 
             label: Red
-            value: rgb(var(--cpt-red))
+            value: rgb(var(--spa-red))
          - 
             label: Orange
-            value: rgb(var(--cpt-orange))
+            value: rgb(var(--spa-orange))
          - 
             label: Yellow
-            value: rgb(var(--cpt-yellow))
+            value: rgb(var(--spa-yellow))
          - 
             label: Green
-            value: rgb(var(--cpt-green))
+            value: rgb(var(--spa-green))
          - 
             label: Cyan
-            value: rgb(var(--cpt-cyan))
+            value: rgb(var(--spa-cyan))
          - 
             label: Blue
-            value: rgb(var(--cpt-blue))
+            value: rgb(var(--spa-blue))
          -
             label: Pink
-            value: rgb(var(--cpt-pink))
+            value: rgb(var(--spa-pink))
          - 
             label: Purple
-            value: rgb(var(--cpt-purple))
+            value: rgb(var(--spa-purple))
    -
       id: italic-color
       title: Italic Color
       type: variable-select
-      default: rgb(var(--cpt-blue))
+      default: rgb(var(--spa-blue))
       options:
          - 
             label: Red
-            value: rgb(var(--cpt-red))
+            value: rgb(var(--spa-red))
          - 
             label: Orange
-            value: rgb(var(--cpt-orange))
+            value: rgb(var(--spa-orange))
          - 
             label: Yellow
-            value: rgb(var(--cpt-yellow))
+            value: rgb(var(--spa-yellow))
          - 
             label: Green
-            value: rgb(var(--cpt-green))
+            value: rgb(var(--spa-green))
          - 
             label: Cyan
-            value: rgb(var(--cpt-cyan))
+            value: rgb(var(--spa-cyan))
          - 
             label: Blue
-            value: rgb(var(--cpt-blue))
+            value: rgb(var(--spa-blue))
          -
             label: Pink
-            value: rgb(var(--cpt-pink))
+            value: rgb(var(--spa-pink))
          - 
             label: Purple
-            value: rgb(var(--cpt-purple))
+            value: rgb(var(--spa-purple))
    - 
       id: spacial-headings-heading
       title: Headings

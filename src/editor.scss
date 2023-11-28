@@ -1,213 +1,213 @@
 /* ---------- E D I T O R ---------- */
 /* Headings */
 .spacial-heading-color {
-    --h1-color: rgb(var(--cpt-red));
-    --h2-color: rgb(var(--cpt-orange));
-    --h3-color: rgb(var(--cpt-yellow));
-    --h4-color: rgb(var(--cpt-green));
-    --h5-color: rgb(var(--cpt-blue));
-    --h6-color: rgb(var(--cpt-purple));
+    --h1-color: rgb(var(--spa-red));
+    --h2-color: rgb(var(--spa-orange));
+    --h3-color: rgb(var(--spa-yellow));
+    --h4-color: rgb(var(--spa-green));
+    --h5-color: rgb(var(--spa-blue));
+    --h6-color: rgb(var(--spa-purple));
 }
 
 .spacial-heading-color.theme-dark.spacial-colorschemes-dark-mystical-nights {
-    --h1-color: rgb(var(--cpt-pink));
-    --h2-color: rgb(var(--cpt-purple));
-    --h3-color: rgb(var(--cpt-blue));
-    --h4-color: rgb(var(--cpt-orange));
-    --h5-color: rgb(var(--cpt-red));
-    --h6-color: rgb(var(--cpt-green));
+    --h1-color: rgb(var(--spa-pink));
+    --h2-color: rgb(var(--spa-purple));
+    --h3-color: rgb(var(--spa-blue));
+    --h4-color: rgb(var(--spa-orange));
+    --h5-color: rgb(var(--spa-red));
+    --h6-color: rgb(var(--spa-green));
 }
 
 .spacial-h1-red {
-    --h1-color: rgb(var(--cpt-red));
+    --h1-color: rgb(var(--spa-red));
 }
 
 .spacial-h1-orange {
-    --h1-color: rgb(var(--cpt-orange));
+    --h1-color: rgb(var(--spa-orange));
 }
 
 .spacial-h1-yellow {
-    --h1-color: rgb(var(--cpt-yellow));
+    --h1-color: rgb(var(--spa-yellow));
 }
 
 .spacial-h1-green {
-    --h1-color: rgb(var(--cpt-green));
+    --h1-color: rgb(var(--spa-green));
 }
 
 .spacial-h1-cyan {
-    --h1-color: rgb(var(--cpt-cyan));
+    --h1-color: rgb(var(--spa-cyan));
 }
 
 .spacial-h1-blue {
-    --h1-color: rgb(var(--cpt-blue));
+    --h1-color: rgb(var(--spa-blue));
 }
 
 .spacial-h1-pink {
-    --h1-color: rgb(var(--cpt-pink));
+    --h1-color: rgb(var(--spa-pink));
 }
 
 .spacial-h1-purple {
-    --h1-color: rgb(var(--cpt-purple));
+    --h1-color: rgb(var(--spa-purple));
 }
 
 .spacial-h2-red {
-    --h2-color: rgb(var(--cpt-red));
+    --h2-color: rgb(var(--spa-red));
 }
 
 .spacial-h2-orange {
-    --h2-color: rgb(var(--cpt-orange));
+    --h2-color: rgb(var(--spa-orange));
 }
 
 .spacial-h2-yellow {
-    --h2-color: rgb(var(--cpt-yellow));
+    --h2-color: rgb(var(--spa-yellow));
 }
 
 .spacial-h2-green {
-    --h2-color: rgb(var(--cpt-green));
+    --h2-color: rgb(var(--spa-green));
 }
 
 .spacial-h2-cyan {
-    --h2-color: rgb(var(--cpt-cyan));
+    --h2-color: rgb(var(--spa-cyan));
 }
 
 .spacial-h2-blue {
-    --h2-color: rgb(var(--cpt-blue));
+    --h2-color: rgb(var(--spa-blue));
 }
 
 .spacial-h2-pink {
-    --h2-color: rgb(var(--cpt-pink));
+    --h2-color: rgb(var(--spa-pink));
 }
 
 .spacial-h2-purple {
-    --h2-color: rgb(var(--cpt-purple));
+    --h2-color: rgb(var(--spa-purple));
 }
 
 .spacial-h3-red {
-    --h3-color: rgb(var(--cpt-red));
+    --h3-color: rgb(var(--spa-red));
 }
 
 .spacial-h3-orange {
-    --h3-color: rgb(var(--cpt-orange));
+    --h3-color: rgb(var(--spa-orange));
 }
 
 .spacial-h3-yellow {
-    --h3-color: rgb(var(--cpt-yellow));
+    --h3-color: rgb(var(--spa-yellow));
 }
 
 .spacial-h3-green {
-    --h3-color: rgb(var(--cpt-green));
+    --h3-color: rgb(var(--spa-green));
 }
 
 .spacial-h3-cyan {
-    --h3-color: rgb(var(--cpt-cyan));
+    --h3-color: rgb(var(--spa-cyan));
 }
 
 .spacial-h3-blue {
-    --h3-color: rgb(var(--cpt-blue));
+    --h3-color: rgb(var(--spa-blue));
 }
 
 .spacial-h3-pink {
-    --h3-color: rgb(var(--cpt-pink));
+    --h3-color: rgb(var(--spa-pink));
 }
 
 .spacial-h3-purple {
-    --h3-color: rgb(var(--cpt-purple));
+    --h3-color: rgb(var(--spa-purple));
 }
 
 .spacial-h4-red {
-    --h4-color: rgb(var(--cpt-red));
+    --h4-color: rgb(var(--spa-red));
 }
 
 .spacial-h4-orange {
-    --h4-color: rgb(var(--cpt-orange));
+    --h4-color: rgb(var(--spa-orange));
 }
 
 .spacial-h4-yellow {
-    --h4-color: rgb(var(--cpt-yellow));
+    --h4-color: rgb(var(--spa-yellow));
 }
 
 .spacial-h4-green {
-    --h4-color: rgb(var(--cpt-green));
+    --h4-color: rgb(var(--spa-green));
 }
 
 .spacial-h4-cyan {
-    --h4-color: rgb(var(--cpt-cyan));
+    --h4-color: rgb(var(--spa-cyan));
 }
 
 .spacial-h4-blue {
-    --h4-color: rgb(var(--cpt-blue));
+    --h4-color: rgb(var(--spa-blue));
 }
 
 .spacial-h4-pink {
-    --h4-color: rgb(var(--cpt-pink));
+    --h4-color: rgb(var(--spa-pink));
 }
 
 .spacial-h4-purple {
-    --h4-color: rgb(var(--cpt-purple));
+    --h4-color: rgb(var(--spa-purple));
 }
 
 .spacial-h5-red {
-    --h5-color: rgb(var(--cpt-red));
+    --h5-color: rgb(var(--spa-red));
 }
 
 .spacial-h5-orange {
-    --h5-color: rgb(var(--cpt-orange));
+    --h5-color: rgb(var(--spa-orange));
 }
 
 .spacial-h5-yellow {
-    --h5-color: rgb(var(--cpt-yellow));
+    --h5-color: rgb(var(--spa-yellow));
 }
 
 .spacial-h5-green {
-    --h5-color: rgb(var(--cpt-green));
+    --h5-color: rgb(var(--spa-green));
 }
 
 .spacial-h5-cyan {
-    --h5-color: rgb(var(--cpt-cyan));
+    --h5-color: rgb(var(--spa-cyan));
 }
 
 .spacial-h5-blue {
-    --h5-color: rgb(var(--cpt-blue));
+    --h5-color: rgb(var(--spa-blue));
 }
 
 .spacial-h5-pink {
-    --h5-color: rgb(var(--cpt-pink));
+    --h5-color: rgb(var(--spa-pink));
 }
 
 .spacial-h5-purple {
-    --h5-color: rgb(var(--cpt-purple));
+    --h5-color: rgb(var(--spa-purple));
 }
 
 .spacial-h6-red {
-    --h6-color: rgb(var(--cpt-red));
+    --h6-color: rgb(var(--spa-red));
 }
 
 .spacial-h6-orange {
-    --h6-color: rgb(var(--cpt-orange));
+    --h6-color: rgb(var(--spa-orange));
 }
 
 .spacial-h6-yellow {
-    --h6-color: rgb(var(--cpt-yellow));
+    --h6-color: rgb(var(--spa-yellow));
 }
 
 .spacial-h6-green {
-    --h6-color: rgb(var(--cpt-green));
+    --h6-color: rgb(var(--spa-green));
 }
 
 .spacial-h6-cyan {
-    --h6-color: rgb(var(--cpt-cyan));
+    --h6-color: rgb(var(--spa-cyan));
 }
 
 .spacial-h6-blue {
-    --h6-color: rgb(var(--cpt-blue));
+    --h6-color: rgb(var(--spa-blue));
 }
 
 .spacial-h6-pink {
-    --h6-color: rgb(var(--cpt-pink));
+    --h6-color: rgb(var(--spa-pink));
 }
 
 .spacial-h6-purple {
-    --h6-color: rgb(var(--cpt-purple));
+    --h6-color: rgb(var(--spa-purple));
 }
 
 /* Neon Heading */
@@ -378,7 +378,7 @@ body {
     border-color: rgba(var(--callout-color), 0.4);
     border-width: 1px;
     border-radius: var(--callout-radius);
-    background-color: rgba(var(--cpt-mantle), 0.4);
+    background-color: rgba(var(--spa-mantle), 0.4);
 }
 
 .spacial-callouts.spacial-callouts-sleek .callout-content {
@@ -398,7 +398,7 @@ body {
     border-color: rgba(var(--callout-color), 0.4);
     border-width: 1px;
     border-radius: var(--callout-radius);
-    background-color: rgba(var(--cpt-mantle), 0.4);
+    background-color: rgba(var(--spa-mantle), 0.4);
     --bold-weight: bolder;
 }
 
@@ -472,7 +472,7 @@ body {
     border-color: rgba(var(--callout-color), 0.4);
     border-width: 1px;
     border-radius: var(--callout-radius);
-    background-color: rgba(var(--cpt-mantle), 0.4);
+    background-color: rgba(var(--spa-mantle), 0.4);
 }
 
 .spacial-callouts.spacial-callouts-block .callout-content {
@@ -491,7 +491,7 @@ body {
     border-color: rgba(var(--callout-color), 0.4);
     border-width: 1px;
     border-radius: var(--callout-radius);
-    background-color: rgba(var(--cpt-mantle), 0.4);
+    background-color: rgba(var(--spa-mantle), 0.4);
     --bold-weight: bolder;
 }
 
@@ -543,14 +543,14 @@ body {
 .spacial-callouts .callout[data-callout='note'],
 .callout[data-callout='quote'],
 .callout[data-callout='cite'] {
-    --callout-color: var(--cpt-blue);
+    --callout-color: var(--spa-blue);
 }
 
 .spacial-callouts .callout[data-callout='abstract'],
 .spacial-callouts .callout[data-callout='summary'],
 .spacial-callouts .callout[data-callout='tldr'],
 .spacial-callouts .callout[data-callout='seealso'] {
-    --callout-color: var(--cpt-blue);
+    --callout-color: var(--spa-blue);
 }
 
 .spacial-callouts .callout[data-callout='info'],
@@ -558,7 +558,7 @@ body {
 .spacial-callouts .callout[data-callout='tip'],
 .spacial-callouts .callout[data-callout='hint'],
 .spacial-callouts .callout[data-callout='important'] {
-    --callout-color: var(--cpt-blue);
+    --callout-color: var(--spa-blue);
 }
 
 .spacial-callouts .callout[data-callout='success'],
@@ -567,70 +567,70 @@ body {
 .spacial-callouts .callout[data-callout='question'],
 .spacial-callouts .callout[data-callout='help'],
 .spacial-callouts .callout[data-callout='faq'] {
-    --callout-color: var(--cpt-green);
+    --callout-color: var(--spa-green);
 }
 
 .spacial-callouts .callout[data-callout='warning'],
 .spacial-callouts .callout[data-callout='caution'],
 .spacial-callouts .callout[data-callout='attention'] {
-    --callout-color: var(--cpt-yellow);
+    --callout-color: var(--spa-yellow);
 }
 
 .spacial-callouts .callout[data-callout='failure'],
 .spacial-callouts .callout[data-callout='fail'],
 .spacial-callouts .callout[data-callout='missing'] {
-    --callout-color: var(--cpt-orange);
+    --callout-color: var(--spa-orange);
 }
 
 .spacial-callouts .callout[data-callout='danger'],
 .spacial-callouts .callout[data-callout='error'],
 .spacial-callouts .callout[data-callout='bug'] {
-    --callout-color: var(--cpt-red);
+    --callout-color: var(--spa-red);
 }
 
 .spacial-callouts .callout[data-callout='example'] {
-    --callout-color: var(--cpt-purple);
+    --callout-color: var(--spa-purple);
 }
 
 /* Custom Checkbox */
 .spacial-custom-checkbox {
-    --checkbox-marker-color: rgb(var(--cpt-black));
+    --checkbox-marker-color: rgb(var(--spa-black));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='x'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='x'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-green));
-    border: 1px solid rgb(var(--cpt-green));
+    background-color: rgb(var(--spa-green));
+    border: 1px solid rgb(var(--spa-green));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='x']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='x'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-green), 0.7);
-    border: 1px solid rgba(var(--cpt-green), 0.7);
+    background-color: rgba(var(--spa-green), 0.7);
+    border: 1px solid rgba(var(--spa-green), 0.7);
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='X']>input[type='checkbox']:checked ul>li.task-list-item[data-task='X'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-green));
-    border: 1px solid rgb(var(--cpt-green));
+    background-color: rgb(var(--spa-green));
+    border: 1px solid rgb(var(--spa-green));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='X']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='X'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-green), 0.7);
-    border: 1px solid rgba(var(--cpt-green), 0.7);
+    background-color: rgba(var(--spa-green), 0.7);
+    border: 1px solid rgba(var(--spa-green), 0.7);
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='?'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='?'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-yellow));
-    border: 1px solid rgb(var(--cpt-yellow));
+    background-color: rgb(var(--spa-yellow));
+    border: 1px solid rgb(var(--spa-yellow));
     border-radius: 10px;
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='?']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='?'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-yellow), 0.7);
-    border: 1px solid rgba(var(--cpt-yellow), 0.7);
+    background-color: rgba(var(--spa-yellow), 0.7);
+    border: 1px solid rgba(var(--spa-yellow), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='?'] input[type='checkbox']:checked:after,
@@ -646,14 +646,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='-'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='-'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-red));
-    border: 1px solid rgb(var(--cpt-red));
+    background-color: rgb(var(--spa-red));
+    border: 1px solid rgb(var(--spa-red));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='-']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='-'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-red), 0.7);
-    border: 1px solid rgba(var(--cpt-red), 0.7);
+    background-color: rgba(var(--spa-red), 0.7);
+    border: 1px solid rgba(var(--spa-red), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='-'] input[type='checkbox']:checked:after,
@@ -664,14 +664,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='!'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='!'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-orange));
-    border: 1px solid rgb(var(--cpt-orange));
+    background-color: rgb(var(--spa-orange));
+    border: 1px solid rgb(var(--spa-orange));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='!']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='!'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-orange), 0.7);
-    border: 1px solid rgba(var(--cpt-orange), 0.7);
+    background-color: rgba(var(--spa-orange), 0.7);
+    border: 1px solid rgba(var(--spa-orange), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='!'] input[type='checkbox']:checked:after,
@@ -682,14 +682,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='>'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='>'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-blue));
-    border: 1px solid rgb(var(--cpt-blue));
+    background-color: rgb(var(--spa-blue));
+    border: 1px solid rgb(var(--spa-blue));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='>']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='>'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-blue), 0.7);
-    border: 1px solid rgba(var(--cpt-blue), 0.7);
+    background-color: rgba(var(--spa-blue), 0.7);
+    border: 1px solid rgba(var(--spa-blue), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='>'] input[type='checkbox']:checked:after,
@@ -700,14 +700,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='/'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='/'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-purple));
-    border: 1px solid rgb(var(--cpt-purple));
+    background-color: rgb(var(--spa-purple));
+    border: 1px solid rgb(var(--spa-purple));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='/']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='/'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-purple), 0.7);
-    border: 1px solid rgba(var(--cpt-purple), 0.7);
+    background-color: rgba(var(--spa-purple), 0.7);
+    border: 1px solid rgba(var(--spa-purple), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='/'] input[type='checkbox']:checked:after,
@@ -718,14 +718,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='R'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='R'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-green));
-    border: 1px solid rgb(var(--cpt-green));
+    background-color: rgb(var(--spa-green));
+    border: 1px solid rgb(var(--spa-green));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='R']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='R'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-green), 0.7);
-    border: 1px solid rgba(var(--cpt-green), 0.7);
+    background-color: rgba(var(--spa-green), 0.7);
+    border: 1px solid rgba(var(--spa-green), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='R'] input[type='checkbox']:checked:after,
@@ -736,14 +736,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='+'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='+'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-purple));
-    border: 1px solid rgb(var(--cpt-purple));
+    background-color: rgb(var(--spa-purple));
+    border: 1px solid rgb(var(--spa-purple));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='+']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='+'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-purple), 0.7);
-    border: 1px solid rgba(var(--cpt-purple), 0.7);
+    background-color: rgba(var(--spa-purple), 0.7);
+    border: 1px solid rgba(var(--spa-purple), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='+'] input[type='checkbox']:checked:after,
@@ -754,14 +754,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='b'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='b'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-orange));
-    border: 1px solid rgb(var(--cpt-orange));
+    background-color: rgb(var(--spa-orange));
+    border: 1px solid rgb(var(--spa-orange));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='b']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='b'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-orange), 0.7);
-    border: 1px solid rgba(var(--cpt-orange), 0.7);
+    background-color: rgba(var(--spa-orange), 0.7);
+    border: 1px solid rgba(var(--spa-orange), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='b'] input[type='checkbox']:checked:after,
@@ -772,14 +772,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='B'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='B'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-blue));
-    border: 1px solid rgb(var(--cpt-blue));
+    background-color: rgb(var(--spa-blue));
+    border: 1px solid rgb(var(--spa-blue));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='B']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='B'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-blue), 0.7);
-    border: 1px solid rgba(var(--cpt-blue), 0.7);
+    background-color: rgba(var(--spa-blue), 0.7);
+    border: 1px solid rgba(var(--spa-blue), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='B'] input[type='checkbox']:checked:after,
@@ -790,14 +790,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='D'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='D'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-cyan));
-    border: 1px solid rgb(var(--cpt-cyan));
+    background-color: rgb(var(--spa-cyan));
+    border: 1px solid rgb(var(--spa-cyan));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='D']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='D'] .task-list-item-checkbox:hover {
-    background-colora: rgb(var(--cpt-cyan), 0.7);
-    border: 1px solida rgb(var(--cpt-cyan), 0.7);
+    background-colora: rgb(var(--spa-cyan), 0.7);
+    border: 1px solida rgb(var(--spa-cyan), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='D'] input[type='checkbox']:checked:after,
@@ -808,15 +808,15 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='I'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='I'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-blue));
-    border: 1px solid rgb(var(--cpt-blue));
+    background-color: rgb(var(--spa-blue));
+    border: 1px solid rgb(var(--spa-blue));
     border-radius: 10px;
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='I']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='I'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-blue), 0.7);
-    border: 1px solid rgba(var(--cpt-blue), 0.7);
+    background-color: rgba(var(--spa-blue), 0.7);
+    border: 1px solid rgba(var(--spa-blue), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='I'] input[type='checkbox']:checked:after,
@@ -827,14 +827,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='i'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='i'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-yellow));
-    border: 1px solid rgb(var(--cpt-yellow));
+    background-color: rgb(var(--spa-yellow));
+    border: 1px solid rgb(var(--spa-yellow));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='i']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='i'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-yellow), 0.7);
-    border: 1px solid rgba(var(--cpt-yellow), 0.7);
+    background-color: rgba(var(--spa-yellow), 0.7);
+    border: 1px solid rgba(var(--spa-yellow), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='i'] input[type='checkbox']:checked:after,
@@ -845,14 +845,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='N'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='N'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-orange));
-    border: 1px solid rgb(var(--cpt-orange));
+    background-color: rgb(var(--spa-orange));
+    border: 1px solid rgb(var(--spa-orange));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='N']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='N'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-orange), 0.7);
-    border: 1px solid rgba(var(--cpt-orange), 0.7);
+    background-color: rgba(var(--spa-orange), 0.7);
+    border: 1px solid rgba(var(--spa-orange), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='N'] input[type='checkbox']:checked:after,
@@ -863,14 +863,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='Q'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='Q'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-cyan));
-    border: 1px solid rgb(var(--cpt-cyan));
+    background-color: rgb(var(--spa-cyan));
+    border: 1px solid rgb(var(--spa-cyan));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='Q']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='Q'] .task-list-item-checkbox:hover {
-    background-colora: rgb(var(--cpt-cyan), 0.7);
-    border: 1px solida rgb(var(--cpt-cyan), 0.7);
+    background-colora: rgb(var(--spa-cyan), 0.7);
+    border: 1px solida rgb(var(--spa-cyan), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='Q'] input[type='checkbox']:checked:after,
@@ -881,14 +881,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='P'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='P'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-blue));
-    border: 1px solid rgb(var(--cpt-blue));
+    background-color: rgb(var(--spa-blue));
+    border: 1px solid rgb(var(--spa-blue));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='P']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='P'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-blue), 0.7);
-    border: 1px solid rgba(var(--cpt-blue), 0.7);
+    background-color: rgba(var(--spa-blue), 0.7);
+    border: 1px solid rgba(var(--spa-blue), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='P'] input[type='checkbox']:checked:after,
@@ -899,14 +899,14 @@ body {
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='C'],
 .spacial-custom-checkbox ul>li.task-list-item[data-task='C'] .task-list-item-checkbox {
-    background-color: rgb(var(--cpt-red));
-    border: 1px solid rgb(var(--cpt-red));
+    background-color: rgb(var(--spa-red));
+    border: 1px solid rgb(var(--spa-red));
 }
 
 .spacial-custom-checkbox .task-list-item-checkbox[data-task='C']:hover,
 .spacial-custom-checkbox ul>li.task-list-item[data-task='C'] .task-list-item-checkbox:hover {
-    background-color: rgba(var(--cpt-red), 0.7);
-    border: 1px solid rgba(var(--cpt-red), 0.7);
+    background-color: rgba(var(--spa-red), 0.7);
+    border: 1px solid rgba(var(--spa-red), 0.7);
 }
 
 .spacial-custom-checkbox [data-task='C'] input[type='checkbox']:checked:after,
@@ -929,31 +929,31 @@ body {
 }
 
 .spacial-rainbow-tags p>a.tag:nth-child(7n + 1) {
-    color: rgb(var(--cpt-red));
+    color: rgb(var(--spa-red));
 }
 
 .spacial-rainbow-tags p>a.tag:nth-child(7n + 2) {
-    color: rgb(var(--cpt-orange));
+    color: rgb(var(--spa-orange));
 }
 
 .spacial-rainbow-tags p>a.tag:nth-child(7n + 3) {
-    color: rgb(var(--cpt-yellow));
+    color: rgb(var(--spa-yellow));
 }
 
 .spacial-rainbow-tags p>a.tag:nth-child(7n + 4) {
-    color: rgb(var(--cpt-green));
+    color: rgb(var(--spa-green));
 }
 
 .spacial-rainbow-tags p>a.tag:nth-child(7n + 5) {
-    color: rgb(var(--cpt-cyan));
+    color: rgb(var(--spa-cyan));
 }
 
 .spacial-rainbow-tags p>a.tag:nth-child(7n + 6) {
-    color: rgb(var(--cpt-blue));
+    color: rgb(var(--spa-blue));
 }
 
 .spacial-rainbow-tags p>a.tag:nth-child(7n + 7) {
-    color: rgb(var(--cpt-purple));
+    color: rgb(var(--spa-purple));
 }
 
 /* CSS Class */
