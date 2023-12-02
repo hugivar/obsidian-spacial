@@ -523,21 +523,10 @@ body {
     --table-row-last-border-width: var(--table-border-width);
 
     /* Tags */
-    --tag-size: max(var(--font-ui-medium), var(--font-small));
-    --tag-color: rgb(var(--spa-accent));
-    --tag-color-hover: rgb(var(--spa-accent));
-    --tag-decoration: none;
-    --tag-decoration-hover: underline;
-    --tag-background: transparent;
-    --tag-background-hover: 0;
-    --tag-border-color: hsl(var(--interactive-accent-hsl), 10%);
-    --tag-border-color-hover:
-        hsl(var(--interactive-accent-hsl),
-            15%);
-    --tag-border-width: 0;
-    --tag-padding-x: 0;
-    --tag-padding-y: 0;
-    --tag-radius: 0.8em;
+    --tag-color: rgb(var(--spa-text));
+    --tag-color-hover: rgb(var(--spa-text));
+    --tag-background: rgba(var(--spa-accent), 0.4);
+    --tag-background-hover: rgba(var(--spa-accent), 0.6);
 
     /* Window frame */
     --titlebar-background: var(--background-secondary);

@@ -9,12 +9,6 @@
             0 0 0 2px rgb(var(--spa-surface1));
     }
 
-    .checkbox-container {
-        --background-modifier-border-hover: rgb(var(--spa-red));
-
-        box-shadow: 0 0 2px inset rgb(var(--spa-base));
-    }
-
     .checkbox-container::after {
         --toggle-thumb-color: var(--text-on-accent);
 
@@ -32,9 +26,6 @@
     }
 }
 
-.checkbox-container.is-enabled {
-    background-color: rgb(var(--spa-green));
-}
 
 button:not(.clickable-icon) {
     transition: var(--transition-hover-bg), var(--transition-hover-box-shadow);
